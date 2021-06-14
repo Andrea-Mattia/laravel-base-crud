@@ -19,7 +19,13 @@
                         <td>{{ $comic->id }}</td>
                         <td>{{ $comic->title }}</td>
                         <td>{{ $comic->series }}</td>
-                        <td>SHOW</td>
+                        <td>
+                            <a href="{{ route('comics.show', $comic->id) }}" 
+                                class="btn btn-primary"
+                                >
+                                SHOW
+                            </a>
+                        </td>
                         <td>EDIT</td>
                         <td>DELETE</td>
                     </tr>
